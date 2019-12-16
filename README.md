@@ -12,7 +12,7 @@
   - Solo **una** de las integrantes del equipo va a ser la encargada de mergear. Para eso:
     * Pararse en master con `git checkout master`
     * Traer todas las branchs con `git fetch --all`
-    * Listar todas las branchs con `git branch -r` (el `-r` es de remoto, nos lista las branch de GitHub, es decir, de las demás)
+    * Listar todas las branchs con `git branch -a` (el `-a` es de all, nos lista todas las branch, locales y remotas, es decir, la nuestra y las de las demás)
     * Ir mergeando una a una con `git merge origin/nombre-branch`. Si hay conflictos, solucionarlos, commitear y seguir mergeando las demás branchs. **OJO:** el nombre de las branchs que nos traemos tenemos que utilizarlas con origin, porque vienen desde el remote, en cambio la nuestra que está en nuestra computadora no
     * Finalmente pushear a master
  - Para borrar las branchs locales `git branch -d nombre-branch`
