@@ -7,7 +7,7 @@
   - Primero, **una** de las integrantes del grupo debe **forkear** este repositorio y **agrega como colaboradoras** al resto del equipo
   - Todas deben **clonar** este repositorio
   - Una vez clonado, se debe **crear una branch nueva** con un nombre indicativo de lo que se va a hacer (*no se trabaja en master*)
-  - Repartirse el trabajo y trabajar cada una en su propia branch
+  - Repartirse el trabajo y trabajar cada una en su propia branch con `git checkout -b mi-branch`
   - A la hora de pushear, pushear la nueva branch creada (`git push origin mi-branch`)
   - Solo **una** de las integrantes del equipo va a ser la encargada de mergear. Para eso:
     * Pararse en master con `git checkout master`
