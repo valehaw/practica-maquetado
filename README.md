@@ -1,5 +1,7 @@
 # Practica maquetado <br>
 
+![Diseño a seguir](https://cdn.dribbble.com/users/522558/screenshots/5059613/dribble_static__1_.png)
+
 ## Instrucciones <br>
 
   - Primero, **una** de las integrantes del grupo debe **forkear** este repositorio y **agrega como colaboradoras** al resto del equipo
@@ -19,7 +21,6 @@
 
 ## Recursos <br>
 
-  - [Diseño a seguir](https://cdn.dribbble.com/users/522558/screenshots/5059613/dribble_static__1_.png)
   - [Imágen de comida 1](https://www.freepnglogos.com/uploads/pasta-png/pasta-piada-italian-street-food-home-page-38.png)
   - [Imágen de comida 2](http://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-Transparent-Background.png)
   - [Imágen de comida 3](http://pngtransparent.com/images/pizza-png-1096x1111_06ce1bde.png)
