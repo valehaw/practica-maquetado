@@ -26,7 +26,6 @@ body{
   background: linear-gradient(to right, #ba5090, #846bb6);
   margin: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
 }
@@ -55,9 +54,10 @@ span{
 #container{
   background: white;
   width: 80%;
-  margin: 40px auto 40px auto;
+  margin: 60px auto 60px auto;
   height: auto;
   border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.397);
 }
 
 .top-menu{
@@ -71,38 +71,107 @@ span{
 
 .logo{
   padding-top: 30px;
-  height: 60px;
+  height: 58px;
   margin-right: 20px;
 }
 
 .order-info{
-  
-  margin-left: 120px;
-  height: 85px;
-  display: flex;
-  justify-content:space-around;
-}
-
-.location{
-  width: 300px;
-  box-sizing: border-box;
-  padding-right: 15px;
-  position: relative;
-}
-
-.top-dishes{
-  background: red;
-  width: 80px;
-  box-sizing: border-box;
-  padding: 15px;
-}
-
-.order-info{
+  margin-left: 100px;
   height: 85px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
+
+
+
+.location{
+  width: 290px;
+  
+  position: relative;
+}
+
+.address{
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-map-marker-alt{
+  height: 48px;
+  padding: 17px 5px 0 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:rgb(196, 195, 195);
+  
+}
+
+.fa-pencil-alt{
+  box-sizing: border-box;
+  color:rgb(104, 103, 103);
+  padding: 17px 0 0 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+#search-text-input{
+  width: 100%;
+  margin: 0;
+  border: 1px solid rgb(238, 237, 237);
+  border-radius: 15px;
+  height: 35px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+::placeholder{
+  color: rgb(206, 204, 204);
+  font-size: 12px;
+}
+
+.button-holder{
+  top:59px;
+  position: absolute;
+  left: 255px;
+}
+
+.fa-search{
+  color: rgb(196, 195, 195);
+  cursor: pointer;
+}
+
+
+
+.top-dishes{
+  width: 100px;
+  box-sizing: border-box;
+  padding: 0 16px 0 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dish{
+  height: 65px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.dish.one{
+  top: 25px;
+  z-index: 5;
+}
+.dish.second{
+  top: 18px;
+  z-index: 2;
+}
+
+.dish.third{
+  top: 10px;
+  z-index: 1;
+}
+
 
 .order{
   background: white;
@@ -166,50 +235,3 @@ span{
 
 }
 
-#search-text-input{
-  width: 100%;
-  margin: 0;
-  border: 1px solid rgb(209, 205, 205);
-  border-radius: 5px;
-  height: 35px;
-  box-sizing: border-box;
-  padding-left: 15px;
-}
-
-::placeholder{
-  color: rgb(196, 195, 195);
-  font-size: 12px;
-}
-
-.button-holder{
-  top:59px;
-  position: absolute;
-  left: 255px;
-}
-
-.fa-search{
-  color: rgb(196, 195, 195);
-  cursor: pointer;
-}
-
-.address{
-  display: flex;
-  flex-direction: row;
-}
-
-.fa-map-marker-alt{
-  height: 48px;
-  padding: 17px 5px 0 0;
-  font-size: 15px;
-  box-sizing: border-box;
-  color:rgb(196, 195, 195);
-  
-}
-
-.fa-pencil-alt{
-  box-sizing: border-box;
-  color:rgb(104, 103, 103);
-  padding: 17px 0 0 5px;
-  font-size: 11px;
-  cursor: pointer;
-}
