@@ -23,5 +23,50 @@
 }
 
 body{
-  
+  background: linear-gradient(to right, #ff00cc, #333399);
+  height: 560px;
+  margin: 0;
+}
+
+/* ingredients ---------------------*/
+.ingredients {
+  left: 5%;
+  position: absolute;
+  top: 5%;
+}
+
+.ingredients ul {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.4);
+  height: 140px;
+  padding: 10px 0 0 20px;
+  width: 50%;
+}
+
+.ingredients li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px 130px 20px 0;
+  position: relative;
+}
+
+.ingredients img {
+  width: 28px;
+}
+
+.ingredients p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  left: 45px;
+  position: absolute;
+  top: 20px;
+}
+
+.ingredients p span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: -18px;
 }

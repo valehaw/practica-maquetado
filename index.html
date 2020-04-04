@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Food Delivery</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section class="top-menu"></section>
-  <section id="hero"></section>
-  <section class="ingredientes"></section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <section class="top-menu"></section>
+    
+    <section id="hero"></section>
+  
+    <!-- El recuadro de ingredientes no lo veo como una sección, 
+    lo veo más como un componente del hero. Cuando este lista la sección
+    hero, posiciono el recuadro en su lugar.
+    <section class="ingredientes"></section> -->
+  
+    <div class="ingredients">
+      <ul>
+        <li><img src="img/cheese.svg" alt="Cheese">
+          <p><span>60g</span> Mozzarella</p></li>
+        <li><img src="img/bacon.svg" alt="Bacon">
+          <p><span>60g</span> Bacon</p></li>
+        <li><img src="img/ham.svg" alt="Ham">
+          <p><span>60g</span> Ham</p></li>
+        <li><img src="img/sausage.svg" alt="Sausage">
+            <p><span>60g</span> Sausages</p></li>
+        <li><img src="img/chicken.svg" alt="Chicken">
+          <p><span>60g</span> Chicken Fillet</p></li>
+        <li><img src="img/pizza.svg" alt="Pizza">
+          <p><span>60g</span> Pizza Base</p></li>                               
+      </ul>
+    </div>
+
   <section class="carta"></section>
+  
 </body>
 </html>
