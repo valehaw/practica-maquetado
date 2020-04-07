@@ -24,72 +24,65 @@
 
 body{
   background: linear-gradient(to right, #ba5090, #846bb6);
-  margin: 0;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
   justify-content: center;
-  height: 100vh;
+  margin: 0;
 }
 
 a{
-  text-decoration: none;
   color: rgb(207, 206, 206);
-  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 h6{
-  margin: 0;
-  padding: 18px 0;
-  font-family: Arial, Helvetica, sans-serif;
   color:rgb(196, 195, 195);
   font-weight: 300;
-  
+  margin: 0;
+  padding: 18px 0;
 }
 
 span{
-  font-weight: 700;
   color:rgb(104, 103, 103);
-  
+  font-weight: 700;
 }
 
 #container{
   background: white;
-  width: 80%;
-  margin: 60px auto 60px auto;
-  height: auto;
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.397);
+  height: auto;
+  margin: 60px auto 60px auto;
+  width: 80%;
 }
 
 .top-menu{
-  height: 110px;
   box-sizing: border-box;
-  padding: 0 50px;
   display: flex;
   flex-direction: row;
+  height: 110px;
   justify-content: space-evenly;
+  padding: 0 50px;
 }
 
 .logo{
-  padding-top: 30px;
   height: 58px;
   margin-right: 20px;
+  padding-top: 30px;
 }
 
 .order-info{
-  margin-left: 100px;
-  height: 85px;
   display: flex;
+  margin-left: 100px;
   flex-direction: row;
+  height: 85px;
   justify-content: space-around;
 }
 
-
-
-
 .location{
-  width: 290px;
-  
   position: relative;
+  width: 290px;
 }
 
 .address{
@@ -98,31 +91,31 @@ span{
 }
 
 .fa-map-marker-alt{
-  height: 48px;
-  padding: 17px 5px 0 0;
-  font-size: 15px;
   box-sizing: border-box;
   color:rgb(196, 195, 195);
-  
+  font-size: 15px;
+  height: 48px;
+  padding: 17px 5px 0 0;
 }
 
 .fa-pencil-alt{
   box-sizing: border-box;
   color:rgb(104, 103, 103);
-  padding: 17px 0 0 5px;
-  font-size: 11px;
   cursor: pointer;
+  font-size: 11px;
+  padding: 17px 0 0 5px;
 }
 
 #search-text-input{
-  width: 100%;
-  margin: 0;
   border: 1px solid rgb(238, 237, 237);
   border-radius: 15px;
-  height: 35px;
   box-sizing: border-box;
+  height: 35px;
+  margin: 0;
   padding-left: 15px;
+  width: 100%;
 }
+  
 
 ::placeholder{
   color: rgb(206, 204, 204);
@@ -130,9 +123,9 @@ span{
 }
 
 .button-holder{
-  top:59px;
-  position: absolute;
   left: 255px;
+  position: absolute;
+  top:59px;
 }
 
 .fa-search{
@@ -140,22 +133,20 @@ span{
   cursor: pointer;
 }
 
-
-
 .top-dishes{
-  width: 100px;
+  align-items: flex-end;
   box-sizing: border-box;
-  padding: 0 16px 0 10px;
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  padding: 0 16px 0 10px;
+  position: relative;
+  width: 100px;
 }
 
 .dish{
+  cursor: pointer;
   height: 65px;
   position: absolute;
-  cursor: pointer;
 }
 
 .dish.one{
@@ -172,14 +163,13 @@ span{
   z-index: 1;
 }
 
-
 .order{
   background: white;
-  height: 85px;
-  width: 210px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   border-bottom-left-radius:  15px;
   border-bottom-right-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  height: 85px;
+  width: 210px;
 }
 
 .order-detail{
@@ -187,7 +177,6 @@ span{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(187, 185, 185);
   height: 28px;
   box-sizing: border-box;
@@ -195,12 +184,11 @@ span{
 }
 
 .quantity{
-  
+  border-bottom: 0.5px dotted rgb(121, 120, 120);
+  box-sizing: border-box;
   font-size: 11px;
   height: 15px;
-  border-bottom: 0.5px dotted rgb(121, 120, 120);
   padding-top: 1px;
-  box-sizing: border-box;
 }
 
 .price{
@@ -212,22 +200,22 @@ span{
 }
 
 .fa-shopping-cart{
+  box-sizing: border-box; 
   font-size: 14px;
   padding-right: 2px;
-  box-sizing: border-box;  
 }
 
 .order-button{
-  color: white;
-  letter-spacing: 2px;
-  width: 88%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin: 12px;
-  border-radius: 10px;
-  border: none;
   background: linear-gradient(to right, #846bb6, #e33c6e );
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
   cursor: pointer;
+  letter-spacing: 2px;
+  margin: 12px;
+  padding: 10px;
+  width: 88%;
 }
 
 .order-button:hover{
