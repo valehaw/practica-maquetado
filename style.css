@@ -165,7 +165,6 @@ section {
   width: 100%;
 }
   
-
 ::placeholder{
   color: rgb(206, 204, 204);
   font-size: 12px;
@@ -464,6 +463,49 @@ input{
 }
 
 /*FIN DE INGREDIENTS*/
+
+
+/*INICIO DE BREADCRUMB*/
+
+
+/* Section Breadcrumb & Tabs */
+#info {
+  background-color: #ffffff;
+  color: #656471;
+  font-family: 'Proxima Nova';
+  margin: 0 auto;
+  width: 80%;
+}
+
+#breadcrumb a, #breadcrumb span {
+  color: #656471;
+  font-size: 14px;
+}
+
+#breadcrumb a.select-item {
+  color: #afaebb !important;
+}
+
+#tabs {
+  display: flex;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+#tabs div {
+  padding-right: 35px;
+}
+
+#tabs div .tab-item {
+  font-size: 20px; 
+}
+
+#tabs .select .tab-item {
+  border-bottom: 3px #6B70BF solid;
+  padding: 0 0 15px 0;
+}
+
+/*FIN DE BREADCRUMB*/
 
 
 
