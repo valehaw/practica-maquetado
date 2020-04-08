@@ -21,3 +21,198 @@
   font-weight: normal;
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
+
+/* G E N E R A L */
+body{
+  width: 100%;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  margin: 5%;
+  position: relative;
+  -webkit-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+
+  width:max-content;
+
+}
+
+.hero{
+  width: 900px;
+  padding: 10px;
+}
+
+.pizza{
+  display: block;
+  background-image: url("http://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-Transparent-Background.png") ;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position-x: 10px;
+  background-position-y: 100px;
+  width: 50%;
+}
+
+.info{
+  display: block;
+  padding-left: 10px;
+  width: 40%;
+  height: fit-content;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+/*Elementos*/
+
+.hot-chilli{
+  display: flex;
+  margin-top: 5px;
+}
+
+.hot-class{
+  padding-right: 25px;
+  padding-bottom: 5px;
+}
+
+.hot-class h6{
+  padding-top: 5px;
+  align-self: center;
+}
+
+input{
+  display:none;
+}
+
+.fa-pepper-hot{
+  font: size 20px;
+  color: #c2c2cf;
+}
+
+.fa-pepper-hot:active{
+  color:red;
+}
+
+.fa-pepper-hot:hover{
+  color: #75738f;
+}
+
+.price-cant{
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.cant{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: solid 1px #f6f6f6;
+  background-color:#f6f6f6;
+  color: black;
+  padding: 10px;
+  height: 15px;
+  width: 100px;
+  box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -webkit-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+
+}
+
+.price{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border: solid 1px;
+  border-color: #c2c2cf;
+  background-color: #f6f6f6;
+  padding: 10px;
+  height: 15px;
+  width: 100px;
+  box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -webkit-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+}
+
+
+button {
+  align-content: center;
+  border-radius: 15px;
+  background: rgb(145,33,209);
+  background: linear-gradient(90deg, rgba(145,33,209,1) 0%, rgba(219,119,163,1) 100%);
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.button2 {
+  text-align: right;
+  padding-right: 5px;
+  background-color: black;
+  border-radius: 10px;
+  color: grey;
+  cursor: pointer;
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  margin-left: 0;
+  margin-top: 10%;
+  padding: 10px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+h1{
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h4{
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  color: red;
+}
+
+h5{
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+}
+
+h6{
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  margin: 0;
+}
+
+.description{
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  font-size: 9px;
+  width: 250px;
+  padding-bottom: 10%;
+}
