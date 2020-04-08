@@ -5,23 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Food Delivery</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="top-menu"></section>
-  <section id="hero"></section>
-  <section class="ingredientes"></section>
+
+  <div id="container">
+
+    <!--EMPIEZA MI TOP-MENU-->
+    
+    <section class="top-menu">
+        
+      <img class="logo" src="img/logo.png" alt="logo">
+        
+      <section class="order-info">
+          
+        <div class="location">
+
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <h6>My location: <span>Down Town Brooklyn, str 29, box 14</span></h6>
+              <i class="fas fa-pencil-alt"></i>
+            </div>
+
+            <input id='search-text-input' type="text" name="text" placeholder="What food you want?">
+            
+            <div class="button-holder">
+              <i class="fas fa-search"></i>
+            </div>
+
+        </div>
+
+        <div class="top-dishes">
+
+            <img class="dish one" src="img/pasta1.png" alt="pizza1">
+            <img class="dish second" src="img/Smothered_Pork_Chops.png" alt="pizza1">
+            <img class="dish third" src="img/pasta1.png" alt="pizza1">
+
+        </div>
+          
+        <div class="order">
+            
+            <div class="order-detail">
+
+                <a class="quantity" href="#">3 dishes</a>
+                <a class="price" href="#">$ 56</a>
+                <a class="cart" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+
+            </div>
+            
+            <button class="order-button" type="submit">ORDER</button>
+            
+        </div>
+
+      </section>
+     
+     
+    </section>
+
+    <!--TERMINA MI TOP-MENU-->
+    
+  <!--INICIO DE HERO-->
+
+  <div class="card">
+    <section class="Hero">
+        <section class="pizza">
+          <figure class="button2"> Back to menú</figure>
+        </section>
+
+        <section class="info">
+        <h1>Tomato Pomadoro</h1>
+          <article class="hot-chilli">
+            <div class="hot-class">
+              <i class="fas fa-pepper-"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+              <i class="fas fa-pepper-hot"></i>
+            </div>
+            <h6>Hot as Hell!</h6>
+          </article>
+        <p class="description">The Amazing sauce accentuates the crust, cheese and other toppings, as it takes it with the entire pizza.</p>
+
+        <article class="price-cant">
+          <div class="cant">
+            <h6>-</h6>
+            <h6>1</h6>
+            <h6>+</h6>
+          </div>
+          <div class="price">
+            <h5>Price</h5>
+            <h4>$14</h4>
+          </div>
+        </article>
+
+        <button>ADD TO CART</button>
+
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <!--FIN DE HERO-->
+ 
+    
+<!-- El recuadro de ingredientes no lo veo como una sección, 
+    lo veo más como un componente del hero. Cuando este lista la sección
+    hero, posiciono el recuadro en su lugar.
+    <section class="ingredientes"></section> -->
+  
+    <div class="ingredients">
+      <ul>
+        <li><img src="img/cheese.svg" alt="Cheese">
+          <p><span>60g</span> Mozzarella</p></li>
+        <li><img src="img/bacon.svg" alt="Bacon">
+          <p><span>60g</span> Bacon</p></li>
+        <li><img src="img/ham.svg" alt="Ham">
+          <p><span>60g</span> Ham</p></li>
+        <li><img src="img/sausage.svg" alt="Sausage">
+            <p><span>60g</span> Sausages</p></li>
+        <li><img src="img/chicken.svg" alt="Chicken">
+          <p><span>60g</span> Chicken Fillet</p></li>
+        <li><img src="img/pizza.svg" alt="Pizza">
+          <p><span>60g</span> Pizza Base</p></li>                               
+      </ul>
+    </div>
+
+<!--FIN DE INGREDIENTES-->
+  
+  
+ <!--INICIO DE BREADCRUMB-->
+  
   <section id="info">
+    
     <section id="breadcrumb">
         <a href="#">Find Food</a> <span>></span> <a href="#">Riviera Restaurant</a> <span>></span> <a class="select-item" href="#">Tomato Pomadora</a>
     </section>
 
     <section id="tabs">
-        <div id="taste" class="select"><span class="tab-item">Teast good with</span></div>
-        <div id="feedback"><span class="tab-item"></span>Feedback</span></div>
-        <div id="detail"><span class="tab-item"></span>Detailed info</span></div>
-
+        <div id="taste" class="select"><span class="tab-item">Taste good with</span></div>
+        <div id="feedback"><span class="tab-item">Feedback</span></div>
+        <div id="detail"><span class="tab-item">Detailed info</span></div>
     </section>
+  
 </section>
+
+<!--FIN DE BREADCRUMB-->
+
+  </div>
+
 </body>
 </html>

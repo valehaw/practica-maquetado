@@ -22,9 +22,451 @@
   src: url('fonts/Proxima\ Nova\ Extrabold.otf');
 }
 
+
 body{
-  
+  background: linear-gradient(to right, #ba5090, #846bb6);
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  justify-content: center;
+  margin: 0;
 }
+
+h1{
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+h4{
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  color: red;
+}
+
+h5{
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+}
+
+h6{
+  color:rgb(196, 195, 195);
+  font-weight: 300;
+  margin: 0;
+  padding: 18px 0;
+}
+
+a{
+  color: rgb(207, 206, 206);
+  text-decoration: none;
+}
+
+span{
+  color:rgb(104, 103, 103);
+  font-weight: 700;
+}
+
+button {
+  align-content: center;
+  border-radius: 15px;
+  background: rgb(145,33,209);
+  background: linear-gradient(90deg, rgba(145,33,209,1) 0%, rgba(219,119,163,1) 100%);
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+
+
+
+/*INICIO DE TOPMENU*/
+
+
+#container{
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.397);
+  height: auto;
+  margin: 60px auto 60px auto;
+  width: 80%;
+}
+
+.top-menu{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 110px;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+
+.logo{
+  height: 58px;
+  margin-right: 20px;
+  padding-top: 30px;
+}
+
+.order-info{
+  display: flex;
+  margin-left: 100px;
+  flex-direction: row;
+  height: 85px;
+  justify-content: space-around;
+}
+
+.location{
+  position: relative;
+  width: 290px;
+}
+
+.address{
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-map-marker-alt{
+  box-sizing: border-box;
+  color:rgb(196, 195, 195);
+  font-size: 15px;
+  height: 48px;
+  padding: 17px 5px 0 0;
+}
+
+.fa-pencil-alt{
+  box-sizing: border-box;
+  color:rgb(104, 103, 103);
+  cursor: pointer;
+  font-size: 11px;
+  padding: 17px 0 0 5px;
+}
+
+#search-text-input{
+  border: 1px solid rgb(238, 237, 237);
+  border-radius: 15px;
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0;
+  padding-left: 15px;
+  width: 100%;
+}
+  
+::placeholder{
+  color: rgb(206, 204, 204);
+  font-size: 12px;
+}
+
+.button-holder{
+  left: 255px;
+  position: absolute;
+  top:59px;
+}
+
+.fa-search{
+  color: rgb(196, 195, 195);
+  cursor: pointer;
+}
+
+.top-dishes{
+  align-items: flex-end;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px 0 10px;
+  position: relative;
+  width: 100px;
+}
+
+.dish{
+  cursor: pointer;
+  height: 65px;
+  position: absolute;
+}
+
+.dish.one{
+  top: 25px;
+  z-index: 5;
+}
+.dish.second{
+  top: 18px;
+  z-index: 2;
+}
+
+.dish.third{
+  top: 10px;
+  z-index: 1;
+}
+
+.order{
+  background: white;
+  border-bottom-left-radius:  15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  height: 85px;
+  width: 210px;
+}
+
+.order-detail{
+  background: #3b3c55;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(187, 185, 185);
+  height: 28px;
+  box-sizing: border-box;
+  padding-top: 6px;
+}
+
+.quantity{
+  border-bottom: 0.5px dotted rgb(121, 120, 120);
+  box-sizing: border-box;
+  font-size: 11px;
+  height: 15px;
+  padding-top: 1px;
+}
+
+.price{
+  font-size: 15px; 
+}
+
+.cart{
+  font-size: 10.5px;
+}
+
+.fa-shopping-cart{
+  box-sizing: border-box; 
+  font-size: 14px;
+  padding-right: 2px;
+}
+
+.order-button{
+  background: linear-gradient(to right, #846bb6, #e33c6e );
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 12px;
+  padding: 10px;
+  width: 88%;
+}
+
+.order-button:hover{
+  background: linear-gradient(to right, #6741b4, #e61050 );
+}
+
+/*FIN DE TOPMENU*/
+
+
+/*INICIO DE HERO*/
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  margin: 5%;
+  position: relative;
+  -webkit-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+}
+
+.hero{
+  width: 900px;
+  padding: 10px;
+}
+
+.pizza{
+  display: block;
+  background-image: url("http://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-Transparent-Background.png") ;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position-x: 10px;
+  background-position-y: 100px;
+  width: 50%;
+}
+
+.info{
+  display: block;
+  padding-left: 10px;
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+/*Elementos*/
+
+.hot-chilli{
+  display: flex;
+  margin-top: 5px;
+}
+
+.hot-class{
+  padding-right: 25px;
+  padding-bottom: 5px;
+}
+
+.hot-class h6{
+  padding-top: 5px;
+  align-self: center;
+}
+
+input{
+  display:none;
+}
+
+.fa-pepper-hot{
+  font-size: 20px;
+  color: #c2c2cf;
+}
+
+.fa-pepper-hot:active{
+  color:red;
+}
+
+.fa-pepper-hot:hover{
+  color: #75738f;
+}
+
+.price-cant{
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+.cant{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: solid 1px #f6f6f6;
+  background-color:#f6f6f6;
+  color: black;
+  padding: 10px;
+  height: 15px;
+  width: 100px;
+  box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -webkit-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+
+}
+
+.price{
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border:1px solid #c2c2cf;
+  background-color: #f6f6f6;
+  padding: 10px;
+  height: 15px;
+  width: 100px;
+  box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -webkit-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
+}
+
+.button2 {
+  text-align: right;
+  padding-right: 5px;
+  background-color: black;
+  border-radius: 10px;
+  color: grey;
+  cursor: pointer;
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  margin-left: 0;
+  margin-top: 10%;
+  padding: 10px;
+  padding-right: 20px;
+  width: 200px;
+}
+
+
+.description{
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  font-size: 9px;
+  width: 250px;
+  padding-bottom: 10%;
+}
+
+
+/*FIN DE HERO*/
+
+
+
+/*INICIO DE INGREDIENTS*/
+
+.ingredients {
+  left: 5%;
+  position: absolute;
+  top: 5%;
+}
+
+.ingredients ul {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.4);
+  height: 140px;
+  padding: 10px 0 0 20px;
+  width: 50%;
+}
+
+.ingredients li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px 130px 20px 0;
+  position: relative;
+}
+
+.ingredients img {
+  width: 28px;
+}
+
+.ingredients p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  left: 45px;
+  position: absolute;
+  top: 20px;
+}
+
+.ingredients p span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: -18px;
+}
+
+/*FIN DE INGREDIENTS*/
+
+
+/*INICIO DE BREADCRUMB*/
+
 
 /* Section Breadcrumb & Tabs */
 #info {
@@ -53,11 +495,17 @@ body{
 #tabs div {
   padding-right: 35px;
 }
+
 #tabs div .tab-item {
   font-size: 20px; 
 }
 
 #tabs .select .tab-item {
   border-bottom: 3px #6B70BF solid;
-  padding: 0 0 15px 0
+  padding: 0 0 15px 0;
 }
+
+/*FIN DE BREADCRUMB*/
+
+
+
