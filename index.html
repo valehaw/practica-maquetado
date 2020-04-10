@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Food Delivery</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Delivery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-  <div id="container">
+    <div id="container">
 
-    <!--EMPIEZA MI TOP-MENU-->
-    
-    <section class="top-menu">
-        
-      <img class="logo" src="img/logo.png" alt="logo">
-        
-      <section class="order-info">
-          
+      <!-- EMPIEZA TOP-MENU -->   
+      <section class="top-menu">
+        <a class="brand" href="#"><img src="img/logo.png" alt="Logo" /></a>
+         
         <div class="location">
+            <h6> <i class="fas fa-map-marker-alt"></i> My location: <span class="direction">
+              Down Town Brooklyn, str 29, box 14</span> <i class="fas fa-pencil-alt"></i></h6>
 
-            <div class="address">
-              <i class="fas fa-map-marker-alt"></i>
-              <h6>My location: <span>Down Town Brooklyn, str 29, box 14</span></h6>
-              <i class="fas fa-pencil-alt"></i>
-            </div>
-
-            <input id='search-text-input' type="text" name="text" placeholder="What food you want?">
-            
-            <div class="button-holder">
-              <i class="fas fa-search"></i>
-            </div>
-
-        </div>
+            <div class="top-input">
+                <input type="text" name="text" placeholder="What do you want?" />
+                <i class="fas fa-search"></i>
+              </div>
+        </div> <!-- termina location -->
 
         <div class="top-dishes">
-
-            <img class="dish one" src="img/pasta1.png" alt="pizza1">
-            <img class="dish second" src="img/Smothered_Pork_Chops.png" alt="pizza1">
-            <img class="dish third" src="img/pasta1.png" alt="pizza1">
-
+          <img class="dish-one" src="img/pasta1.png" alt="Pasta">
+          <img class="dish-second" src="img/pasta1.png" alt="Pork">
+          <img class="dish-third" src="img/pasta1.png" alt="Pasta">
         </div>
           
-        <div class="order">
-            
-            <div class="order-detail">
-
-                <a class="quantity" href="#">3 dishes</a>
-                <a class="little-price" href="#">$ 56</a>
-                <a class="cart" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
-
-            </div>
-            
-            <button class="order-button" type="submit">ORDER</button>
-            
+        <div class="order">         
+          <div class="order-detail">
+            <a class="quantity" href="#">3 dishes</a>
+            <a class="little-price" href="#">$ 56</a>
+            <a class="cart" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+          </div>  
+          <button class="order-button" type="submit">Order</button>
         </div>
-
-      </section>
-     
-     
-    </section>
-
-    <!--TERMINA MI TOP-MENU-->
+      </section> <!-- TERMINA TOP-MENU -->
     
   <!--INICIO DE HERO-->
 
