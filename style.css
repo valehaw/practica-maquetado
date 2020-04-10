@@ -25,37 +25,8 @@
 
 body{
   background: linear-gradient(to right, #ba5090, #846bb6);
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  height: auto;
-  justify-content: center;
+  height: 800px;
   margin: 0;
-}
-
-h1{
-  font-family: 'Proxima Nova';
-  font-weight: bold;
-  font-size: 42px;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-h4{
-  font-family: 'Proxima Nova';
-  font-weight: normal;
-  color: red;
-}
-
-h5{
-  font-family: 'Proxima Nova';
-  font-weight: bold;
-}
-
-h6{
-  color:rgb(196, 195, 195);
-  font-weight: 300;
-  margin: 0;
-  padding: 18px 0;
 }
 
 a{
@@ -151,7 +122,8 @@ section {
   box-sizing: border-box;
   color:rgb(104, 103, 103);
   cursor: pointer;
-  font-size: 11px;
+  font-size: 15px;
+  height: 46px;
   padding: 17px 0 0 5px;
 }
 
@@ -239,7 +211,7 @@ section {
   padding-top: 1px;
 }
 
-.price{
+.little-price{
   font-size: 15px; 
 }
 
@@ -275,48 +247,101 @@ section {
 
 /*INICIO DE HERO*/
 
-.card{
-  display: flex;
-  flex-wrap: wrap;
-  width: 85%;
+.hero{
   overflow: hidden;
+  width: 100%;
+  position: fixed;
   background-color: #f6f6f6;
-  margin: 5%;
-  position: relative;
   -webkit-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
   -moz-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
   box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
 }
 
-.hero{
-  width: 900px;
-  padding: 10px;
-}
 
 .pizza{
-  display: block;
-  background-image: url("http://www.pngplay.com/wp-content/uploads/2/Top-View-Pizza-Transparent-Background.png") ;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position-x: 10px;
-  background-position-y: 100px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
   width: 50%;
+  height: 380px;
+}
+.pizza img{
+  width: 60%;
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  padding: 35px;
+  top: 60px;
+  right: 80px;
+  -webkit-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  -moz-box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
+  box-shadow: -1px 14px 147px -50px rgba(0,0,0,0.58);
 }
 
 .info{
-  display: block;
-  padding-left: 10px;
-  width: 40%;
-  padding-top: 5%;
-  padding-bottom: 10%;
+  width: 50%;
+  height: 380px;
+  position: relative;
+
 }
+.info h1{
+  margin: 0;
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-size: 42px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+}
+.info h4{
+  margin: 0;
+  font-family: 'Proxima Nova';
+  font-weight: normal;
+  color: red;
+}
+
+.info h5{
+  margin: 0;
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+}
+
+.info h6{
+    margin: 0;
+    font-family: 'Proxima Nova';
+    font-weight: bold;
+    color:rgb(196, 195, 195);
+    font-weight: 300;
+}
+
+.hot{
+  font-family: 'Proxima Nova';
+  font-weight: bold;
+  font-weight: 300;
+  position: relative;
+  top: -15px;
+}
+
+.description{
+  font-family: 'Proxima Nova';
+  font-weight: lighter;
+  font-size: 9px;
+  width: 250px;
+  padding-bottom: 10%;
+  position: absolute;
+  top: 110px;
+}
+
 
 /*Elementos*/
 
 .hot-chilli{
   display: flex;
   margin-top: 5px;
+  position: absolute;
+  top: 80px;
+  left: 0;
 }
 
 .hot-class{
@@ -335,11 +360,11 @@ input{
 
 .fa-pepper-hot{
   font-size: 20px;
-  color: #c2c2cf;
+  color: red;
 }
 
 .fa-pepper-hot:active{
-  color:red;
+  color:#c2c2cf;
 }
 
 .fa-pepper-hot:hover{
@@ -350,6 +375,8 @@ input{
   display: flex;
   justify-content: space-around;
   width: 250px;
+  position: absolute;
+  top: 180px;
 }
 
 .cant{
@@ -383,9 +410,6 @@ input{
   padding: 10px;
   height: 15px;
   width: 100px;
-  box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
-  -webkit-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
-  -moz-box-shadow: -1px 4px 7px -5px rgba(0,0,0,0.58);
 }
 
 .button2 {
@@ -395,22 +419,33 @@ input{
   border-radius: 10px;
   color: grey;
   cursor: pointer;
+  position: absolute;
   font-family: 'Proxima Nova';
   font-weight: lighter;
-  margin-left: 0;
-  margin-top: 10%;
+  top: 10px;
+  left: -60px;
   padding: 10px;
   padding-right: 20px;
   width: 200px;
 }
 
-
-.description{
+.button3{
+  align-content: center;
+  border-radius: 15px;
+  background: rgb(145,33,209);
+  background: linear-gradient(90deg, rgba(145,33,209,1) 0%, rgba(219,119,163,1) 100%);
   font-family: 'Proxima Nova';
   font-weight: lighter;
-  font-size: 9px;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 10px;
   width: 250px;
-  padding-bottom: 10%;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 230px;
+  left: 0;
 }
 
 
@@ -420,10 +455,11 @@ input{
 
 /*INICIO DE INGREDIENTS*/
 
+
 .ingredients {
-  left: 5%;
   position: absolute;
-  top: 5%;
+  top: 450px;
+  right: -300px;
 }
 
 .ingredients ul {
@@ -474,7 +510,7 @@ input{
   color: #656471;
   font-family: 'Proxima Nova';
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 #breadcrumb a, #breadcrumb span {
