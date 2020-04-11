@@ -54,6 +54,7 @@ button {
   overflow: hidden;
   width: 90%;
 }
+/* FIN DE GENERAL */
 
 /* INICIO DE TOPMENU */
 .top-menu{
@@ -205,10 +206,9 @@ input[type=text]::placeholder {
   text-transform: uppercase;
   width: 88%;
 }
-
 /* FIN DE TOPMENU */
 
-/*INICIO DE HERO*/
+/* INICIO DE HERO */
 .hero {
   box-shadow: inset 0 0 60px rgba(219, 218, 218, 0.5);
   display: flex;
@@ -358,7 +358,7 @@ input[type=text]::placeholder {
 .ingredients {
   left: 50%;
   position: absolute;
-  top: 490px;
+  top: 485px;
 }
 
 .ingredients ul {
@@ -396,10 +396,9 @@ input[type=text]::placeholder {
   position: absolute;
   top: -18px;
 }
+/* FIN DE HERO */
 
-/*FIN DE HERO*/
-
-/*INICIO DE BREADCRUMB*/
+/* INICIO DE BREADCRUMB */
 #info {
   background-color: #ffffff;
   color: #656471;
