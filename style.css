@@ -29,21 +29,6 @@ body {
   margin: 0;
 }
 
-button {
-  align-content: center;
-  border-radius: 15px;
-  background: rgb(145,33,209);
-  background: linear-gradient(90deg, rgba(145,33,209,1) 0%, rgba(219,119,163,1) 100%);
-  font-family: 'Proxima Nova';
-  font-weight: lighter;
-  border: none;
-  color: white;
-  margin-top: 20px;
-  padding: 10px;
-  width: 250px;
-  cursor: pointer;
-}
-
 #container {
   background-color: white;
   border-radius: 25px;
@@ -53,6 +38,14 @@ button {
   position: relative;
   overflow: hidden;
   width: 90%;
+}
+
+.background-gray {
+  background-color: #f6f6f6;
+  height: 135px;
+  width: 100%;
+  position: absolute;
+  top: 73.5%;
 }
 /* FIN DE GENERAL */
 
@@ -400,42 +393,125 @@ input[type=text]::placeholder {
 
 /* INICIO DE BREADCRUMB */
 #info {
-  background-color: #ffffff;
-  color: #656471;
-  font-family: 'Proxima Nova';
-  margin: 0 auto;
+  color: #3b3c55;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 500px;
+  padding: 25px 0 0 90px; 
   width: 100%;
 }
 
 #breadcrumb a, #breadcrumb span {
   color: #656471;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 0 3px;
 }
 
 #breadcrumb a.select-item {
   color: #afaebb !important;
+  text-decoration: none;
 }
 
 #tabs {
+  border-bottom: 1px solid #ebebeb;
   display: flex;
-  margin-top: 50px;
   font-size: 20px;
+  margin-top: 50px;
+  padding-bottom: 16px; 
+  width: 84.5%;
 }
 
-#tabs div {
-  padding-right: 35px;
+#tabs div  {
+  padding-right: 160px;
 }
 
 #tabs div .tab-item {
-  font-size: 20px; 
+  color: #3b3c55;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 #tabs .select .tab-item {
-  border-bottom: 3px #6B70BF solid;
-  padding: 0 0 15px 0;
+  border-bottom: 5px #6B70BF solid;
+  padding-bottom: 15px; 
 }
 
-/*FIN DE BREADCRUMB*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: 120px;
+  width: 100%;
+}
 
+.card-container .card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.3);
+  height: 215px;   
+  margin: -10px 13px 0 13px;
+  position: relative;
+  text-align: center;
+  width: 19.5%;
+}
 
+.card-container img {   
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(146, 146, 146, 0.3);
+  left: 50px;
+  padding: 10px;
+  position: absolute;
+  top: -30%;
+  width: 45%;
+}
 
+.card h5 {
+  color: #424463;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 65px; 
+  font-size: 14px;
+}
+
+.card p {
+  color: #ccc;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 12px;
+  margin: -17px 0 20px 0;
+}
+
+.food-price {
+  border: 1px solid #dfdfdf;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 25px;
+  color: #424463;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 6px 20px;
+}
+
+.card .fa-info-circle {
+  color: #cecece;
+  cursor: pointer;
+  font-size: 17px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.food-buy {
+  background-color: #fd218f;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0 0 20px rgba(146, 146, 146, 0.3);
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 7px 15px;
+  position: absolute;
+  right: 95px;
+  top: 89%;
+}
+/* FIN DE BREADCRUMB */
