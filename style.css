@@ -45,7 +45,7 @@ body {
   height: 135px;
   width: 100%;
   position: absolute;
-  top: 73.5%;
+  top: 74%;
 }
 /* FIN DE GENERAL */
 
@@ -144,7 +144,7 @@ input[type=text]::placeholder {
   background-color: white;
   border-bottom-left-radius:  15px;
   border-bottom-right-radius: 15px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin-left: 100px;
   width: 230px;
 }
@@ -239,7 +239,7 @@ input[type=text]::placeholder {
   position: absolute;
   text-align: right;
   top: 11%;
-  width: 35%;
+  width: 34%;
 }
 
 .fa-angle-left {
@@ -295,13 +295,14 @@ input[type=text]::placeholder {
   width: 55%;
 }
 
-.price-cant{
+.price-cant {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   top: 255px;
 }
 
-.cant{
+.cant {
   align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
@@ -317,18 +318,38 @@ input[type=text]::placeholder {
 .price { 
   align-items: center;
   border: 1px solid #dfdddd;
-  border-radius: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 25px;
   color: #3b3c55;
 	display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  font-weight: lighter;
-  height: 23px;
+  height: 21px;
   justify-content: space-around;
   margin-left: 30px;
   padding: 10px;
-  text-align: center;
   width: 130px;
+}
+
+.price p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  font-weight: lighter;
+  margin-left: -10px;
+}
+
+.price h4 {
+  color: #fd218f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  margin-left: -30px;
+}
+
+.price span img {
+  position: absolute;
+  right: 6px;
+  top: 16px;
+  width: 10px;
 }
 
 .button3{
@@ -454,7 +475,7 @@ input[type=text]::placeholder {
   width: 19.5%;
 }
 
-.card-container img {   
+.card-container .f-dish {   
   background-color: white;
   border: 5px solid white;
   border-radius: 100%;
@@ -489,7 +510,15 @@ input[type=text]::placeholder {
   color: #424463;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  padding: 6px 20px;
+  padding: 6px 25px 6px 15px;
+  position: relative;
+}
+
+.food-price img {
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  width: 9px;
 }
 
 .card .fa-info-circle {
